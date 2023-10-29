@@ -19,7 +19,11 @@ const slides = [
 
 const slider = () => {
 
-	//remets les dots dynamiquements
+	for( let i = 0; i < slides.length; i++ ) {
+		const dot = document.createElement('span');
+		dot.classList.add('dot');
+		document.querySelector('.dots').appendChild(dot);
+	}
 
 	const arrow__left = document.querySelector('.arrow_left');
 	const arrow__right = document.querySelector('.arrow_right');
